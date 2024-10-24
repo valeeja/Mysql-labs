@@ -1,0 +1,33 @@
+LAB 4:
+
+creating table query:
+
+CREATE TABLE Students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    date_of_birth DATE,
+    email VARCHAR(100),
+    enrolled_date DATE
+);
+
+inserting data:
+
+INSERT INTO Students (first_name, last_name, date_of_birth, email, enrolled_date)
+VALUES 
+('John', 'Doe', '2000-05-15', 'john.doe@example.com', '2024-01-10'),
+('Jane', 'Smith', '1999-08-20', 'jane.smith@example.com', '2024-01-15'),
+('Alice', 'Johnson', '2001-11-05', 'alice.johnson@example.com', '2024-01-12');
+
+Update Query:
+
+UPDATE Students
+SET email = 'new.email@example.com'
+WHERE student_id = 1;
+
+Delete Query:
+
+DELETE FROM Students
+WHERE student_id = 2;
+
+
